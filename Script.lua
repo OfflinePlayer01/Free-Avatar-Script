@@ -262,8 +262,13 @@ do
 			print("Cancelled");
 		end}}});
 	end});
-
-
+	e.Scripts:AddButton({Title="Nut Hub For Solara",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Qrto1/working/main/pc", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
 	e.Unc:AddButton({Title="UNC Test",Description="Key Not Found",Callback=function()
 		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/OfflinePlayer01/Unc-Test-Script/main/Script.lua", true))();
