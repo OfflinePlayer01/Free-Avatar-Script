@@ -280,6 +280,14 @@ do
 	e.Credits:AddParagraph({Title="Discord : _offlineplayer_",Content="@805461346736930836"});
 	e.Credits:AddParagraph({Title="Github : OfflinePlayer01",Content="Link : https://github.com/OfflinePlayer01/"});
 	e.Credits:AddParagraph({Title="Roblox : 917Dream",Content="Link : https://www.roblox.com/users/4656433338/profile"});
+	e.Credits:AddButton({Title="My Website",Description="Copies My Website Link",Callback=function()
+		d:Dialog({Title="Copy Website Link?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			setclipboard("https://offlineplayer01.github.io/Offline-Exploiter-Web-Site");
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+
 	e.Credits:AddButton({Title="Credits GUI",Description="Key Not Found",Callback=function()
 		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/OfflinePlayer01/Credits-GUI-Discord-LIB-/main/Script.lua", true))();
