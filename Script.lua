@@ -269,6 +269,20 @@ do
 			print("Cancelled");
 		end}}});
 	end});
+	e.Scripts:AddButton({Title="KRNL",Description="Old Days...",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/OfflinePlayer01/KRNL/main/Script.lua", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Synapse X",Description="Old Days...",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/OfflinePlayer01/Synapse-X/main/Script.lua", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
 	e.Unc:AddButton({Title="UNC Test",Description="Key Not Found",Callback=function()
 		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/OfflinePlayer01/Unc-Test-Script/main/Script.lua", true))();
