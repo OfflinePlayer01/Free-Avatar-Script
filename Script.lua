@@ -269,9 +269,9 @@ do
 			print("Cancelled");
 		end}}});
 	end});
-	e.Scripts:AddButton({Title="KRNL",Description="Old Days...",Callback=function()
+	e.Scripts:AddButton({Title="Add INF YEILD Plugins ( Plugin Shop )",Description="Old Days...",Callback=function()
 		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/OfflinePlayer01/KRNL/main/Script.lua", true))();
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Infinite-Store/Infinite-Store/main/main.lua"))();
 		end},{Title="No",Callback=function()
 			print("Cancelled");
 		end}}});
