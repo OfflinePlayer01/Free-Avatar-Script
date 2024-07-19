@@ -269,16 +269,16 @@ do
 			print("Cancelled");
 		end}}});
 	end});
-	e.Scripts:AddButton({Title="Add INF YEILD Plugins ( Plugin Shop )",Description="Old Days...",Callback=function()
+	e.Scripts:AddButton({Title="Add INF YEILD Plugins ( Plugin Shop )",Description="Key Not Found",Callback=function()
 		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/Infinite-Store/Infinite-Store/main/main.lua"))();
 		end},{Title="No",Callback=function()
 			print("Cancelled");
 		end}}});
 	end});
-	e.Scripts:AddButton({Title="Synapse X",Description="Old Days...",Callback=function()
+	e.Scripts:AddButton({Title="Colision Script",Description="Key Not Found",Callback=function()
 		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/OfflinePlayer01/Synapse-X/main/Script.lua", true))();
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/OfflinePlayer01/Colision-Script/main/Script.lua", true))();
 		end},{Title="No",Callback=function()
 			print("Cancelled");
 		end}}});
