@@ -101,9 +101,16 @@ do
 			print("Cancelled");
 		end}}});
 	end});
-	e.Scripts:AddButton({Title="Murder Mystery 2 Script 2",Description="Key Not Found",Callback=function()
+	e.Scripts:AddButton({Title="Murder Mystery 2 Script",Description="Key Not Found",Callback=function()
 		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Drifter0507/GUIS/main/MURDER%20MYSTERY%202", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+	e.Scripts:AddButton({Title="Murder Mystery 2 Script 2",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/OfflinePlayer01/MM2-3/main/Script.lua", true))();
 		end},{Title="No",Callback=function()
 			print("Cancelled");
 		end}}});
