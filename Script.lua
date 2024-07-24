@@ -13,7 +13,7 @@ local a = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/relea
 local b = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))();
 local c = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))();
 local d = a:CreateWindow({Title="Offline HUB",SubTitle="☮",TabWidth=160,Size=UDim2.fromOffset(580, 460),Acrylic=true,Theme="Dark",MinimizeKey=Enum.KeyCode.LeftControl});
-local e = {Scripts=d:AddTab({Title="♎ Scripts",Icon=""}),Unc=d:AddTab({Title="♈ UNC Test",Icon=""}),Exploits=d:AddTab({Title="♍ Supported Exploits",Icon=""}),Credits=d:AddTab({Title="♌ Credits",Icon=""}),Version=d:AddTab({Title="♐ Version & Updates",Icon=""}),Main=d:AddTab({Title="♒ Databases",Icon=""}),Settings=d:AddTab({Title="♉ Settings",Icon=""})};
+local e = {Scripts=d:AddTab({Title="♎ Scripts",Icon=""}),Copies=d:AddTab({Title="♎ Can Be Copied",Icon=""}),Unc=d:AddTab({Title="♈ UNC Test",Icon=""}),Exploits=d:AddTab({Title="♍ Supported Exploits",Icon=""}),Credits=d:AddTab({Title="♌ Credits",Icon=""}),Version=d:AddTab({Title="♐ Version & Updates",Icon=""}),Main=d:AddTab({Title="♒ Databases",Icon=""}),Settings=d:AddTab({Title="♉ Settings",Icon=""})};
 local f = a.Options;
 do
 	a:Notify({Title="Offline HUB Loaded",Content="You Can Execute Scripts Now!",SubContent="Enjoy :)",Duration=5});
@@ -297,9 +297,30 @@ do
 			print("Cancelled");
 		end}}});
 	end});
-	e.Scripts:AddButton({Title="Chat Bypasser",Description="Key Not Found",Callback=function()
+	e.Copies:AddButton({Title="HWID",Description="Copies Your HWID",Callback=function()
 		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
-			loadstring(game:HttpGet('https://raw.githubusercontent.com/Roman34296589/SnapSanix-GUI-MM2/main/SnapSanix%20GUI%20mm2.lua'))();
+			setclipboard(gethwid);
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+    e.Copies:AddButton({Title="GENV",Description="Copies Your GENV",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			setclipboard(getgenv);
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+    e.Copies:AddButton({Title="FENV",Description="Copies Your FENV",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			setclipboard(getfenv);
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
+    e.Copies:AddButton({Title="INSTANCES",Description="Copies Your INSTANCES",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			setclipboard(getinstances);
 		end},{Title="No",Callback=function()
 			print("Cancelled");
 		end}}});
