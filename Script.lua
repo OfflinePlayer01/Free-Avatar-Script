@@ -297,6 +297,13 @@ do
 			print("Cancelled");
 		end}}});
 	end});
+	e.Scripts:AddButton({Title="PLS DONATE Script ( For Those With A Little Robux )",Description="Key Not Found",Callback=function()
+		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/OfflinePlayer01/PLS-DONATE-Script/main/script_final.lua", true))();
+		end},{Title="No",Callback=function()
+			print("Cancelled");
+		end}}});
+	end});
 	e.Copies:AddButton({Title="HWID",Description="Copies Your HWID",Callback=function()
 		d:Dialog({Title="Execute Script?",Content="Are You Sure?",Buttons={{Title="Yes",Callback=function()
 			setclipboard(gethwid);
